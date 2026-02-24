@@ -121,7 +121,7 @@ export {
   getCurrentMonth,
   getPreviousMonth,
 } from "./date-picker";
-export type { DatePickerProps } from "./date-picker";
+export type { DatePickerProps, DateRange, Matcher } from "./date-picker";
 
 export {
   Card,
