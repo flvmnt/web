@@ -1,19 +1,20 @@
-import { RootProvider } from 'fumadocs-ui/provider/next';
-import './global.css';
-import { Inter, Barlow } from 'next/font/google';
+import { RootProvider } from "fumadocs-ui/provider/next";
+import "./global.css";
+import { Inter, Barlow } from "next/font/google";
+import { FontAwesomeScript } from "@prisma-docs/eclipse";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 const barlow = Barlow({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-barlow',
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-barlow",
 });
 
-export default function Layout({ children }: LayoutProps<'/'>) {
+export default function Layout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
@@ -23,6 +24,7 @@ export default function Layout({ children }: LayoutProps<'/'>) {
       <head></head>
       <body className="flex flex-col min-h-screen">
         <RootProvider>{children}</RootProvider>
+        <FontAwesomeScript />
       </body>
     </html>
   );

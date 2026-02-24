@@ -1,3 +1,5 @@
+export { FontAwesomeScript } from "./fontawesome-script";
+
 export { Accordion, Accordions } from "./accordion";
 
 export { Action, actionVariants } from "./action";
